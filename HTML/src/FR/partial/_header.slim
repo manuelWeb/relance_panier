@@ -1,0 +1,17 @@
+/ header
+tr
+  td.m0auto width="620" align="center" style="padding-top: 4px;"
+    p.lh-130.m0 style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #{$vartxtcolor};"
+      strong
+        == $txtheader
+      br
+    p.lh-100.m0 style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #333333;"
+      | Si la page ne s'affiche pas correctement 
+      a href==($mirorLink) target="_blank" style="color:#333333;"
+          strong
+           | consultez la version en ligne
+- if $addLogo == true
+  tr
+    td.m0auto align="center" valign="bottom" height="60"
+      a href==($s0_logo) target="_blank"
+        img src==(($abspath == true ? $srcAbs : $srcRel)+"logo.png") width="181" height="49" border="0" alt==($alt_logo)

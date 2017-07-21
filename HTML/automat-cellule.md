@@ -1,0 +1,41 @@
+<!-- s1
+  c1
+    s1
+    s2
+    s3
+      c1
+      c2
+  c2
+    s1
+    s2
+      c1
+      c2
+    s3
+      c1
+      c2
+    s4
+    s5
+    s6
+s2 -->
+
+<pre><code>
+    s1
+      c1
+        s1
+        s2
+        s3
+          c1
+          c2
+      c2
+        s1
+        s2
+          c1
+          c2
+        s3
+          c1
+          c2
+        s4
+        s5
+        s6
+    s2
+</code></pre>

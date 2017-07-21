@@ -1,0 +1,56 @@
+/ mentions @see ../var/var_legal.slim
+tr
+  td width="620" valign="top" style="padding-top:3px; padding-bottom: 20px; "
+    p.lh-150 align="left" style="font-family:Verdana, Geneva, sans-serif;font-size:11px;color:#555555;margin:0;text-align:justify;"
+      -if $legalplus[:fr] != ""
+        == $legalplus[:fr]
+        br
+        br
+      - if $legalService == true
+        u == $service[:s1]
+        br
+        == $service[:s2]
+        strong
+          == $service[:s3]
+        == $service[:s4] 
+        br
+        == $service[:s5] 
+        strong
+          == $service[:s6] 
+        == $service[:s7] 
+        br
+        == $service[:s8] 
+        strong
+          == $service[:s9] 
+        == $service[:s10]    
+        br
+        br
+      
+      - if $ModOffre == true
+        == $ModOffre[:s0]
+        u 
+          strong == $ModOffre[:s1]
+        br
+        == $ModOffre[:s2]
+        == $ModOffre[:s3]
+        == $ModOffre[:s4]
+        == $ModOffre[:s5]
+        br
+        br
+
+
+      == $contact[:s1]
+      a href==$lcontact target="_blank" style="color:#333333;text-decoration:underline;"
+        strong
+          == $contact[:s2]
+      |.
+      br
+      == $desabo[:s1]
+      a href==$ldesabo target="_blank" style="color:#333333;text-decoration:underline;"
+        == $desabo[:s2]
+      |. 
+      br
+      == $desabo[:s3]
+      br
+      == $domSas[:s1]
+      

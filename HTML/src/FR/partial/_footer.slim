@@ -1,0 +1,73 @@
+/ footer
+-placeorder="Passez votre commande";
+-internet_tel=["SUR INTERNET Rendez-vous sur www.tempsl.fr","Par téléphone au 0 892 461 461 0,40€/min"];
+-haconf=["Satisfait ou remboursé","Livraison à la carte","Paiement sécurisé","Garantie 1 an"];
+
+/ ##### hr + Passez votre commande
+- if $internetandtel == true
+	tr
+		td bgcolor="#FFFFFF" style="padding-bottom: 16px; "
+			img.altarial src==(($abspath == true ? $srcAbs : $srcRel)+"foo_hr1.png") height="8" border="0" alt=""    
+	tr
+		td bgcolor="#FFFFFF"
+			table border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF"
+				tr
+					td
+						img.altarial src==(($abspath == true ? $srcAbs : $srcRel)+"footer_01.png") width="20" height="20" border="0" alt=""
+					td height="20" valign="middle" align="center" bgcolor="#0070BB" width="203"
+						font style="font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#ffffff;"
+							==placeorder
+					td
+						img.altarial src==(($abspath == true ? $srcAbs : $srcRel)+"footer_03.png") width="8" height="20" border="0" alt=""
+/ ##### end hr + Passez votre commande
+
+/ ##### footer code
+- if $fooCodeBoo == true
+  tr
+    td.pt5.pb5
+      table border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF"
+        tr
+          td
+            table border="0" cellpadding="0" cellspacing="0"
+              tr
+                td.pr10 align="right" width="458"
+                  p.altarial.foocode.m0
+                    | Pour recevoir vos cadeaux, indiquez le code :
+                td.bdall1 valign="middle" align="center" width="58"
+                  table border="0" cellpadding="0" cellspacing="0"
+                    tr
+                      td valign="middle" align="center" height="24"
+                        font style="font-family: Arial, sans-serif; font-size:16px; color: #0070B9; "
+                          b  == $code
+/ ##### end footer code
+
+// ##### foo_09;foo_10 internet;téléphone
+- if $internetandtel == true
+	tr
+		td
+			table border="0" cellpadding="0" cellspacing="0"
+				tr
+					td
+						a href==$furl target="_blank"
+							img.altarial src==(($abspath == true ? $srcAbs : $srcRel)+"footer_09.png") width="310" height="97" border="0" alt==internet_tel[0]
+					td
+						img.altarial src==(($abspath == true ? $srcAbs : $srcRel)+"footer_10.png") width="310" height="97" border="0" alt==internet_tel[1]
+// ##### end foo_09;foo_10 internet;téléphone
+
+tr
+  td
+    table border="0" cellpadding="0" cellspacing="0"
+      tr
+        td
+          a href==$fgaranties target="_blank"
+            img.altarial src==(($abspath == true ? $srcAbs : $srcRel)+"footer_11.png") width="155" height="59" border="0" alt==haconf[0]
+        td
+          a href==$flivraison target="_blank"
+            img.altarial src==(($abspath == true ? $srcAbs : $srcRel)+"footer_12.png") width="155" height="59" border="0" alt==haconf[1]
+        td
+          a href==$fpaiement target="_blank"
+            img.altarial src==(($abspath == true ? $srcAbs : $srcRel)+"footer_13.png") width="155" height="59" border="0" alt==haconf[2]
+        td
+          a href==$fgaranties target="_blank"
+            img.altarial src==(($abspath == true ? $srcAbs : $srcRel)+"footer_14.png") width="155" height="59" border="0" alt==haconf[3]
+/! end footer

@@ -1,0 +1,45 @@
+/### change
+-$title     = "Le bonheur d'un apéritif à l'extérieur à petits prix !"
+-$txtheader = "Découvrez notre sélection apéritif à partir de 4,95€."
+/### do not change
+-$mirorLink = "http://tempsl.com/Newsletters/miroir/#{$miror}/FR/index.htm"
+-$url       ="http://www.tempsl.fr/fr/";$urlCat ="http://www.tempsl.fr/cat/fr/"
+-$index     ="index.aspx"
+-$srcmedium =["?utm_source=NL&utm_medium=email","&utm_source=NL&utm_medium=email"]
+-$content   =["&utm_content=","url","garantie","livraison","paiement","contact","desabo"]
+/ compact
+-rayon  = "boutique/rayon_evenement.aspx?urlLangue=fr&nbp=99&pg=0&evenement_id="
+-urlRay = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}"
+-pdt    = ["0", "cuisine/fraicheur-conservation/maxi-bocal-a-cocktail-3-7-litres/1905116.html", "cuisine/fraicheur-conservation/corbeille-a-glacons-pomme/1615111.html", "cuisine/apero-barbecue/piques-aperitif-tulipes/1902113.html", "cuisine/decoupe/planchette-a-saucisson/1502111.html", "cuisine/fraicheur-conservation/6-glacons-ceramique/5663216.html"]
+
+/### content link ["logo", "accroche", "pdt", "prix", "bouton" ]
+- $s0_logo    = "#{$url}#{$index}#{$srcmedium[0]}#{$content[0]}logo#{$campaign}"
+/ ### TO_CHANGE
+- $s1c1s1_title   = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}accroche#{$campaign}"
+- $s1c1s2_pk1     = "#{$url}#{pdt[1]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s1c1s3c1_pk5   = "#{$url}#{pdt[5]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s1c2s1_title   = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}accroche#{$campaign}"
+- $s1c2s2c1_price = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}prix#{$campaign}"
+- $s1c2s3c1_price = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}prix#{$campaign}"
+- $s1c2s4_pk2     = "#{$url}#{pdt[2]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s1c2s5_pk3     = "#{$url}#{pdt[3]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s1c2s6_pk4     = "#{$url}#{pdt[4]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s2_btn         = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}bouton#{$campaign}"
+
+/ alt + title
+- $alt_s1c1s1_title   = "Le bonheur d'un apéritif à l'extérieur !"
+- $alt_s1c1s2_pk1     = "Maxi bocal à cocktail 3,7 litres"
+- $alt_s1c1s3c1_pk5   = "6 glaçons céramique*"
+- $alt_s1c1s3c2_bg    = ""
+- $alt_s1c2s1_title   = ""
+- $alt_s1c2s2c1_price = "Sélection à partir de 4.95€"
+- $alt_s1c2s2c2_bg    = ""
+- $alt_s1c2s3c1_price = ""
+- $alt_s1c2s3c2_bg    = ""
+- $alt_s1c2s4_pk2     = "Corbeille à glaçons pomme ou tomate"
+- $alt_s1c2s5_pk3     = "Piques apéritif tulipes"
+- $alt_s1c2s6_pk4     = "Planchette à saucisson"
+- $alt_s2_btn         = "Découvrez la sélection d’un apéritif réussi !"
+
+/ alt NE PAS CHANGER
+- $alt_logo       = "TEMPS L"
